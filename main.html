@@ -7,43 +7,50 @@
 </head>
 
 <body>
-	<form method="get">
-	<label for="#name">Name*</label>
-	<input type="text" id="#name" placeholder="Enter name" required><br><br>
+	<form method="post">
+	<label for="name">Name*</label>
+	<input type="text" id="name" placeholder="Enter name" required><br><br>
 
-	<label for="#email">Email*</label>  
-	<input type="email" id="#email" placeholder="Enter valid email" required>
+	<label for="email">Email*</label>  
+	<input type="email" id="email" placeholder="Enter valid email" required>
 
 	<p>Gender*</p>
 	<input type="radio" id="mm" name="gender" required>
 	<label for="mm">Male</label>
 
 	<input type="radio" id="ff" name="gender">
-	<label for="ff" >Female</label><br>
+	<label for="ff" >Female</label><br><br>
 
-	<p>Laptop Brands</p>
-	<input type="checkbox" id="#laptop">
-	<label for="#laptop">Apple</label>
+	<label for="laptop">Laptop Brands</label>
+<!-- 	<input type="checkbox" id="laptop">
+	<label for="laptop">Apple</label>
 
-	<input type="checkbox" id="#laptop">
-	<label for="#laptop">Asus</label>
+	<input type="checkbox" id="laptop">
+	<label for="laptop">Asus</label>
 
-	<input type="checkbox" id="#laptop">
-	<label for="#laptop">HP</label><br><br>
+	<input type="checkbox" id="laptop">
+	<label for="laptop">HP</label><br><br> -->
+		
+		<select name="laptop" id="laptop">
+			<option value="apple">Apple</option>
+			<option value="asus">Asus</option>
+			<option value="hp">HP</option>
+		</select>
+		<br><br>
 	
-	<label for="#age">Age*</label>
-	<input type="number" id="#age" placeholder="Enter valid age" required><br><br>
+	<label for="age">Age*</label>
+	<input type="number" id="age" placeholder="Enter valid age" required><br><br>
 
-	<label for="#dob">DOB*</label>
-	<input type="date" id=#dob required><br><br>
+	<label for="dob">DOB*</label>
+	<input type="date" id="dob" required><br><br>
 
-	<label for="#password">Password*</label>
-	<input type="password" id="#password" required><br><br>
+	<label for="password">Password*</label>
+	<input type="password" id="password" required><br><br>
 
 	<label for="portfolio">Upload Portfolio</label>
-	<input type="url" id="portfolio"><br><br>
+	<input type="url" id="portfolio" required><br><br>
 	
-	<button>Submit</button>
+	<button type="submit">Submit</button>
 	
 	</form>
 	<script type="text/javascript" src="./script.js">
